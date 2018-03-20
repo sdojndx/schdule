@@ -1,0 +1,235 @@
+学生列表
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/tchandstu/tchandstu/getstudentlist
+{
+	"context":
+	{
+		"tenantId":"1"
+	},
+	"data":
+	{
+		"acadTermId":"383",
+		"accountStatus":-1,
+		"activateStatus":-1,
+		"name":"张"
+	},
+	"pageSize":3,
+	"pageIndex":1
+}
+
+{
+	"context":
+	{
+		"tenantId":"1"
+	},
+	"data":
+	{
+		"acadTermId":"383",
+		"accountStatus":-1,
+		"activateStatus":-1,
+		"account":"s001"
+	},
+	"pageSize":3,
+	"pageIndex":1
+}
+
+{
+	"context":
+	{
+		"tenantId":"1"
+	},
+	"data":
+	{
+		"acadTermId":"383",
+		"accountStatus":-1,
+		"activateStatus":-1,
+		"beginDate":"2016-10-21 00:00:00",
+		"endDate":"2019-10-21 00:00:00"
+	},
+	"pageSize":3,
+	"pageIndex":1
+}
+
+
+//学生详情
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/tchandstu/tchandstu/getstudentinfodetail
+
+{
+	"context":
+	{
+		"tenantId":"1"
+	},
+	"data":
+	{
+		"acadTermID":"383",
+		"studentID":"1"
+	}
+}
+//开启停用学生
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/tchandstu/tchandstu/setstatus
+
+{
+	"context":
+	{
+		"tenantId":"1"
+	},
+	"data":
+	{
+		"id":"1",
+		"status":0
+	}
+}
+//编辑学生
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/tchandstu/tchandstu/editstudentinfo
+
+{
+	"context":
+	{
+		"tenantId":"1"
+	},
+	"data":
+	{
+		"id":"1",
+		"status":0
+	}
+}
+教师列表
+
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/tchandstu/tchandstu/getteacherlist
+
+{
+	"context":
+	{
+		"tenantId":"1"
+	},
+	"data":
+	{
+		"acadTermID":"383",
+		"status":-1,
+		"activatedStatus":-1,
+		"name":"测试",
+		"account":"ssacount12",
+		"acadClasfID":"14",
+		"userClassID":"1",
+		"searchStartDate":"",
+		"searchEndDate":""
+	},
+	"pageSize":3,
+	"pageIndex":1
+}
+
+查看教师信息
+
+
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/tchandstu/tchandstu/getteacherinfo
+
+{
+	"context":
+	{
+		"tenantId":"1"
+	},
+	"data":"1589809518530789376"
+}
+
+设置教师开启启用
+
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/tchandstu/tchandstu/setteacherstatus
+
+{
+	"context":
+	{
+		"tenantId":"1"
+	},
+	"data":{
+		"Id":"1589809518530789376",
+		"status":1
+	}
+}
+
+//任务课程列表
+
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/courseselectionmanage/gettaskcourse
+
+{
+	"context":
+	{
+		"tenantId":"1"
+	},
+	"data":{
+		"acadTermId":"383",
+		"requestTaskID":"1589916506222755841"
+	}
+}
+
+
+
+
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/courseselectionmanage/coursestudent
+
+
+{
+	"context":
+	{
+		"tenantId":"1"
+	},
+	"data":{
+		"courseOfferingID":"1",
+		"requestTaskId":"1589911999306792961"
+	}
+}
+
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/courseselectionmanage/approvedselectstudent
+
+{
+	"context":
+	{
+		"tenantId":"1",
+		"userId":1
+	},
+	"data":{
+		"courseOfferingID":"1",
+		"requestTaskID":"1589911999306792961",
+		"approvedStudentIds":"1589737023462178816",
+		"approvedStatus":1
+	}
+}
+
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/courseselectionmanage/courseslevellist
+
+{
+	"context":
+	{
+		"tenantId":"1"
+	},
+	"data":{
+		"courseTypeID":"211",
+		"requestTaskId":"1589911999306792961"
+	}
+}
+
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/courseselectionmanage/setstudentnewcourse
+
+
+{
+	"context":
+	{
+		"tenantId":"1"
+	},
+	"data":{
+		"courseDemandID":"1",
+		"courseOfferingID":"2",
+		"sourceCourseOfferingID":"1"
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+@import "./common.scss";
+/* 按钮样式 */
+
+.btnPattern {
+	height: 35px;
+	display: inline-block;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 3px;
+	color: #fff;
+	background-color: #3e91eb;
+	cursor: pointer;
+	opacity: 0.93;
+	position: relative;
+	&:hover {
+		opacity: 1;
+	}
+}

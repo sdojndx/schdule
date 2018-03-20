@@ -1,0 +1,73 @@
+.loading{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 10000;
+	visibility: visible;
+	opacity: 1;
+	display: none;
+	top:0px;
+	left:0px;
+
+	.loading_bg{
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		opacity: .6;
+	}
+	.loading_image{
+		position: absolute;
+		width: 100%;
+		height: 64px;
+		left: 0;
+		top: 30%;
+		background: url(../images/page/loading.gif) center no-repeat;
+	}
+}
+/* 超出字数弹出框 */
+.notice_container {
+	position: relative;
+	.notice_win{
+		position: absolute;
+		top: 35px;
+		left: 50%;
+		max-width: 500px;
+		max-height: 320px;
+		line-height: 20px;
+		border-radius: 5px;
+		border: 1px solid #aaa;
+		background: #fafafa;
+		word-wrap: break-word;
+		padding: 10px;
+		font-size: 14px;
+		color: #555;
+		z-index: 5;
+	}
+}
+.validate{
+	z-index:1001;
+	.validate_arrow{
+		float:left;
+	    background: url(../images/page/qipao.png) center no-repeat;
+	    width: 12px;
+	    height: 15px;
+	    z-index: 1;
+	    position: relative;
+	    left:1px;
+	    top:5px;
+	}
+	.validate_box{		
+		float:left;
+	    background-color: #fff;
+	    border: 1px solid #ccc;
+	    padding: 10px;
+	    border-radius: 5px;
+	    font-size: 12px;
+	    .validate_pass{
+	    	color: green;
+	    }
+	    .validate_fail{
+	    	color:red;
+	    }
+	}
+}

@@ -1,0 +1,100 @@
+下拉框
+
+	
+
+学年学期
+{
+	"data":{
+		"type":"AcadYearTerm"
+	},
+	"metaDataCode":"str"
+}
+
+
+年级
+{
+	"data":{
+		"type":"AcadClasf"
+	},
+	"metaDataCode":"str"
+}
+
+
+班级
+
+	id为学期ID
+	id1为年级ID
+{
+	"data":{
+		"id":"383",
+		"id1":"13",
+		"type":"UserClass"
+	},
+	"metaDataCode":"str"
+}
+
+
+教室类型
+{
+	"data":{
+		"type":"RoomType"
+	},
+	"metaDataCode":"str"
+}
+
+
+
+学科
+{
+	"data":{
+		"type":"Subject"
+	},
+	"metaDataCode":"str"
+}
+
+
+
+教学模式
+{
+	"data":{
+		"type":"InstrTypeName"
+	},
+	"metaDataCode":"str"
+}
+考试批次
+
+id为学期ID
+
+{
+	"data":{
+		"id":"383"
+		"type":"ExamBatch"
+	},
+	"metaDataCode":"str"
+}
+
+选课任务
+
+id为学期ID
+id1为年级ID
+
+{
+	"data":{
+		"type":"RequestTask",
+		"id":"383",
+		"id1":"15"
+	}
+}
+
+
+
+课程类别
+
+id为学期ID
+
+{
+	"data":{
+		"type":"CourseType",
+		"id":"383"
+	}
+}

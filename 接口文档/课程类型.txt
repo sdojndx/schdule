@@ -1,0 +1,81 @@
+﻿--查询总成绩
+{
+	"data":{
+		"acadYearID":383,
+		"acadTermID":383,
+		"examBatchID":"1590097925171576832",
+		"studentName":"宋",
+	},
+	"extendParams":[{
+		"fieldName":"str",
+		"tag":"str",
+		"value":{}
+	}],
+	"metaDataCode":"str",
+	"pageIndex":123,
+	"pageSize":123,
+	"sortName":"str",
+	"sortType":123
+}
+
+
+教学模式
+
+
+schooladmin/basedata/teachingmode/showinfo
+{
+	"data":"",
+	"metaDataCode":"str"
+}
+
+
+
+schooladmin/basedata/teachingmode/updateteachingmode
+--分层
+{
+	"data":{
+		"id":"212",
+		"instrTypeID":"212",
+		"level":"",
+		"levelNum":6
+	},
+	"metaDataCode":"str"
+}
+--分类
+{
+	"data":{
+		"id":"213",
+		"instrTypeID":"213",
+		"level":"基础类,综合类,强化类"
+	},
+	"metaDataCode":"str"
+}
+
+
+
+schooladmin/basedata/teachingmode/changestatus
+--停用
+{
+	"data":{
+		"id":"213",
+		"status":1
+	},
+	"metaDataCode":"str"
+}
+
+--新增
+schooladmin/basedata/teachingmode/addteachingmode
+
+{
+	"data":{
+		"instrTypeName":"分类教学",
+		"level":"强化类，基础类,综合类"
+	},
+	"context":{
+		"userid":"1"
+	}
+}
+
+
+
+

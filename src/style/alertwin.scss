@@ -1,0 +1,88 @@
+@import "./common.scss";
+.win_c {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.win_mask {
+	width: 100%;
+	height: 100%;
+	background-color: #ccc;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+	filter: alpha(Opacity=80);
+	position: absolute;
+}
+
+.win_content {
+	padding-top: 60px;
+	box-sizing: border-box;
+}
+
+.win_case {
+	background-color: #fff;
+	padding-bottom: 45px;
+	position: absolute;
+	/*top:50%;  
+	left:50%;  
+	transform:translateX(-50%); */ 
+	.request_mes {
+		color: #529aec;
+		font-size: 20px;
+		width: 100%;
+		text-align: center;
+		margin-top: 80px;
+	}
+	.win_nav {
+		height: 50px;
+		line-height: 50px;
+		color: #fff;
+		font-size: 19px;
+		padding-left: 20px;
+		background: -moz-linear-gradient(left, #209cff, #68e0cf);
+		background: -o-linear-gradient(left, #209cff, #68e0cf);
+		background: -webkit-gradient(linear, 0% 100%, 100% 0%, from(#209cff), to(#68e0cf));
+		filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#209cff', endColorStr='#68e0cf', gradientType='1');
+		/*IE8+*/
+		background: -ms-linear-gradient(top, #209cff, #68e0cf);
+		/* IE 10 */
+		FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#209cff, endColorStr=#68e0cf, gradientType='1');
+		/* IE < 10 */
+		.close_btn {
+			background: url(../images/page/close_win.png) center no-repeat;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			right: 20px;
+			top: 18px;
+			cursor: pointer;
+		}
+		.navSecondTitle {
+			color: #fff;
+			font-size: 14px;
+		}
+	}
+	.win_btn_case {
+		text-align: center;
+		margin-top: 40px;
+	}
+	.win_msg {
+		color: #999;
+		font-size: 11px;
+		width: 430px;
+		line-height: 18px;
+		margin: 20px auto 0;
+		.notice_icon {
+			background: url(../images/page/win_notice.png) center no-repeat;
+			width: 14px;
+			height: 12px;
+			display: inline-block;
+			margin-right: 10px;
+		}
+	}
+}

@@ -1,0 +1,365 @@
+@import "./common.scss";
+//选课任务设置
+.courseCase {
+	width: $wrapWidth;
+	margin: 0 auto;
+	margin-top: 20px;
+	overflow: hidden;
+	.course_right_content {
+		float: left;
+		width: 980px;
+		margin-left: 20px;
+		background: #fff;
+		.course_nav {
+			height: 46px;
+			line-height: 46px;
+			background: #f8f8f8;
+			overflow: hidden;
+			p {
+				float: left;
+				font-size: 15px;
+				color: #3e91eb;
+				margin-left: 20px;
+			}
+			span {
+				float: right;
+				select {
+					width: 207px;
+					height: 24px;
+					border: 1px solid #d4d4d4;
+					margin-right: 20px;
+					border-radius: 3px;
+				}
+			}
+		}
+		.add_course {
+			//width: 738px;
+			display: block;
+			height: 60px;
+			background: #e8f6ff;
+			border: 1px solid #95cef5;
+			color: #3e91eb;
+			font-size: 15px;
+			line-height: 60px;
+			text-align: center;
+			border-radius: 3px;
+			margin: 40px 20px 13px 220px;
+			cursor: pointer;
+		}
+		.list_cont {
+			margin-top: 27px;
+			.course_item_case {
+				//overflow: hidden;
+				.detail_style {
+					font-size: 14px;
+					width: 100%;
+					text-align: center;
+				}
+				.course_creat_time {
+					float: left;
+					width: 175px;
+					text-align: center;
+				}
+				.couse_item_content {
+					float: left;
+					position: relative;
+					border-left: 1px solid #3e91eb;
+					position: relative;
+					.pos_icon {
+						position: absolute;
+						width: 17px;
+						height: 17px;
+						background: url(../images/subpage/circle.png) center no-repeat;
+						left: -8.5px;
+						top: -3px;
+					}
+					.course_item {
+						margin: 0 0 27px 44px;
+						border: 1px solid #95cef5;
+						width: 740px;
+						background: #e8f6ff;
+						border-bottom: none;
+						padding-top: 10px;
+						.info_case {
+							border-bottom: 1px solid #95cef5;
+							div {
+								overflow: hidden;
+								line-height: 36px;
+								margin-left: 30px;
+								.show_detail {
+									width: 16px;
+									height: 18px;
+									display: inline-block;
+									margin-left: 17px;
+									cursor: pointer;
+								}
+								.show_edit {
+									width: 16px;
+									height: 18px;
+									display: inline-block;
+									margin-left: 17px;
+									cursor: pointer;
+								}
+								.show_delete {
+									width: 16px;
+									height: 18px;
+									display: inline-block;
+									margin-left: 17px;
+									cursor: pointer;
+								}
+								p {
+									float: left;
+									color: #666;
+									font-size: 15px;
+									.item_info_title {
+										color: #3e91eb;
+									}
+								}
+								.right_40 {
+									margin-right: 40px;
+								}
+								.publish {
+									width: 115px;
+									height: 35px;
+									background: #f59524;
+									color: #fff;
+									display: block;
+									float: right;
+									text-align: center;
+									border-radius: 3px;
+									margin-right: 30px;
+									cursor: pointer;
+								}
+								.publish_or_not {
+									width: 115px;
+									height: 35px;
+									background: #fa4c4c;
+									color: #fff;
+									display: block;
+									float: right;
+									text-align: center;
+									border-radius: 3px;
+									margin-right: 30px;
+									cursor: pointer;
+								}
+								.disableBtn {
+									width: 115px;
+									height: 35px;
+									background: #c5c5c5;
+									color: #fff;
+									display: block;
+									float: right;
+									text-align: center;
+									border-radius: 3px;
+									margin-right: 30px;
+								}
+								.select_course_over {
+									width: 115px;
+									height: 35px;
+									color: #ccc;
+									display: block;
+									float: right;
+									text-align: center;
+									margin-right: 30px;
+								}
+								.up_icon {
+									width: 16px;
+									height: 8px;
+									display: inline-block;
+									float: right;
+									margin: 35px 30px 0 0;
+									cursor: pointer;
+									background: url(../images/subpage/up_course.png) center no-repeat;
+								}
+								.down_icon {
+									width: 16px;
+									height: 8px;
+									display: inline-block;
+									float: right;
+									margin: 35px 30px 0 0;
+									cursor: pointer;
+									background: url(../images/subpage/down_course.png) center no-repeat;
+								}
+								.addSelectCourse {
+									display: block;
+									width: 135px;
+									height: 28px;
+									border: 1px solid #3e91eb;
+									border-radius: 20px;
+									display: inline-block;
+									float: left;
+									color: #3e91eb;
+									line-height: 28px;
+									text-align: center;
+									margin: 25px 0 29px 0;
+									cursor: pointer;
+								}
+							}
+						}
+						.select_course_case {
+							border-bottom: 1px solid #95cef5;
+							.select_course_item {
+								width: 330px;
+								background: #fff;
+								border-radius: 10px;
+								display: inline-block;
+								margin: 20px 0 20px 35px;
+								.course_item_nav {
+									height: 40px;
+									line-height: 40px;
+									color: #fff;
+									font-size: 18px;
+									border-radius: 10px 10px 0 0;
+									padding-left: 20px;
+									position: relative;
+									.course_icon {
+										width: 16px;
+										height: 18px;
+										display: inline-block;
+										line-height: 40px;
+										margin-left: 20px;
+										cursor: pointer;
+										background: url(../images/subpage/detail.png) center no-repeat;
+									}
+									.course_delete {
+										width: 11px;
+										height: 10px;
+										position: absolute;
+										right: 16px;
+										top: 12px;
+										cursor: pointer;
+										background: url(../images/subpage/delete_con.png) center no-repeat;
+									}
+								}
+								.course_list_content {
+									overflow: hidden;
+									padding: 10px 0 0px 0;
+									color: #999;
+									.course_list {
+										float: left;
+										border: 1px solid #c5c5c5;
+										padding: 5px;
+										border-radius: 3px;
+										margin: 10px 10px 0 20px;
+									}
+								}
+							}
+						}
+					}
+				}
+				.couse_item_content_last {
+					border-color: white;
+				}
+			}
+		}
+	}
+}
+
+//添加课程
+.add_course_case {
+	width: $wrapWidth;
+	margin: 0 auto;
+	margin-top: 20px;
+	overflow: hidden;
+	.addcourse_left_case {
+		float: left;
+		width: 200px;
+		background: #e8f6ff;
+		.addcourse_left_nav {
+			height: 46px;
+			line-height: 46px;
+			text-align: center;
+			color: #fff;
+			font-size: 17px;
+			background: #3e91eb;
+		}
+		.add_course_list {
+			height: 41px;
+			line-height: 41px;
+			color: #666;
+			font-size: 15px;
+			padding-left: 20px;
+			&:hover {
+				color: #fff;
+				background: url(../images/subpage/delete_box.png) 170px center no-repeat #93c3f5;
+				padding-right: 10px
+			}
+		}
+		.left_btns_case {
+			overflow: hidden;
+			text-align: center;
+			margin: 20px 0 30px 35px;
+			div {
+				width: 60px;
+				height: 26px;
+				color: #fff;
+				font-size: 12px;
+				text-align: center;
+				line-height: 26px;
+				float: left;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			.cancle_btn {
+				background: #3e91eb;
+			}
+			.save_btn {
+				background: #f59524;
+				margin-left: 10px
+			}
+		}
+	}
+	.addcourse_right_case {
+		float: left;
+		width: 980px;
+		margin-left: 20px;
+		background: #fff;
+		height: 500px;
+		.addcourse_right_nav {
+			height: 46px;
+			line-height: 46px;
+			font-size: 15px;
+			color: #3e91eb;
+			padding-left: 20px;
+			background-color: #f8f8f8;
+		}
+	}
+}
+
+.btn_case {
+	width: 300px;
+	margin: 40px auto 30px;
+}
+
+/*提示文字*/
+
+.req_mes {
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	color: #3f93eb;
+}
+
+.detail_style {
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+}
+
+/*弹窗内部*/
+.uploadList {
+	.uploadElem {
+		margin: 20px 0 0 20px;
+		padding: 5px 10px;
+		border: 1px solid #95cef5;
+		border-radius: 5px;
+		background: #e8f6ff;
+		color: #666666;
+		display: inline-block;
+		min-width: 100px;
+		line-height: 20px;
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;
+	}
+}

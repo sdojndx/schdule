@@ -1,0 +1,175 @@
+@import "./common.scss";
+//学生选课
+.content{
+	width: $wrapWidth;
+	margin: 0 auto;
+	h2{
+		font-size: 20px;
+		color: #4c96eb;
+		margin-top: 40px;
+	}
+	.courseCase{
+		margin-top: 40px;
+		overflow: hidden;
+		//border: 1px solid #d2d2d2;
+		//background: #fff;
+
+	}
+}
+.course_item_case{
+	.course_creat_time{
+		p{
+			font-size: 16px;
+			color: #3f93ed;
+		}
+		.noticeBall{
+			width: 80px;
+			height: 80px;
+			background: url(../images/studentmanage/notice_corcle.png) center no-repeat;
+			margin-top: 20px;
+			margin-left: 80px;
+			font-size: 16px;
+			color: #fff;
+			text-align: center;
+			.dayNotice{
+				display: block;
+				padding: 12px 0 0 0;
+				line-height: 28px;
+				p {
+					color: #fff;
+				}
+			}
+		}
+		float: left;
+		width: 230px;
+		text-align: center;
+	}
+	.couse_item_content{
+		float: left;
+		position: relative;
+		border-left: 2px solid #3e91eb;
+		position: relative;
+		.pos_icon{
+			position: absolute;
+			width: 11px;
+			height: 18px;
+			background: url(../images/studentmanage/pos_circle_stu.png) center no-repeat;
+			left: -5.5px;
+			top: -0px;
+		}
+		.course_item{
+			margin: 0 0 27px 18px;
+			width: 922px;
+			height: 134px;
+			background: url(../images/studentmanage/course_content.png) center no-repeat;
+			.info_case{
+				.selectItemName{
+					font-size: 16px;
+					margin-top: 17px;
+				}
+				div{
+					overflow: hidden;
+					line-height:36px;
+					margin-left: 30px;
+					p{
+						float: left;
+						color: #666;
+						font-size: 15px;
+						.item_info_title{
+							color: #3e91eb;
+						}
+					}
+					.right_50{
+						margin-right: 50px;
+					}
+					.btn_stucourse{
+						width: 98px;
+						height: 36px;
+						color: #fff;
+						display: block;
+						float: right;
+						text-align: center;
+						border-radius: 3px;
+						margin-right: 30px;
+						cursor: pointer;
+					}
+					.btn_check{
+						background: #29c8ad;
+					}
+					.btn_select{
+						background: #ff6000;
+					}
+					.btn_change{
+						background: #ff5255;
+					}
+					.btn_checkout{
+						background: #3e91eb;
+					}
+					.up_icon{
+						width: 16px;
+						height: 8px;
+						display: inline-block;
+						background: url(../images/subpage/up_course.png) center no-repeat;
+					}
+					.down_icon{
+						width: 16px;
+						height: 8px;
+						display: inline-block;
+						background: url(../images/subpage/down_course.png) center no-repeat;
+					}
+				}
+			}
+			.select_course_case{
+				border-bottom: 1px solid #95cef5;
+				.select_course_item{
+					width: 330px;
+					background: #fff;
+					border-radius: 10px;
+					display: inline-block;
+					margin: 20px 0 20px 35px;
+					.course_item_nav{
+						height: 40px;
+						line-height: 40px;
+						color: #fff;
+						font-size: 18px;
+						border-radius: 10px 10px 0 0;
+						padding-left: 20px;
+						position: relative;
+						.course_icon{
+							width: 16px;
+							height: 18px;
+							display: inline-block;
+							line-height: 40px;
+							margin-left: 20px;
+							background: url(../images/subpage/detail.png) center no-repeat;
+						}
+						.course_delete{
+							width: 11px;
+							height: 10px;
+							position: absolute;
+							right: 16px;
+							top: 12px;
+							cursor: pointer;
+							background: url(../images/subpage/delete_con.png) center no-repeat;
+						}
+					}
+					.course_list_content{
+						overflow: hidden;
+						padding: 10px 0 20px 0;
+						color: #999;
+						.course_list{
+							float: left;
+							border: 1px solid #c5c5c5;
+							padding: 5px;
+							border-radius: 3px;
+							margin: 10px 10px 0 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.couse_item_contentlast{
+		border-left: 2px solid #fff;
+	}
+}

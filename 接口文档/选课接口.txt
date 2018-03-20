@@ -1,0 +1,267 @@
+﻿添加课程
+http://fwdemo.com:8090/dubbos-schooladmin-web/schooladmin/courseselection/course/addcourse
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/course/addcourse
+{
+	"context":
+	{
+		"tenantId":"1",
+		"userId":"2450514279858432"
+	},
+	"data":
+		[{
+			"taskId":"1590347376959160320",
+			"acadStageId":"3",
+	        	"acadClasfId":"14",
+			"acadTermId":"383",
+			"subJectId":"47",
+			"classId":"1"
+		},
+		{
+			"taskId":"1590347376959160320",
+			"acadStageId":"3",
+	        "acadClasfId":"14",
+			"acadTermId":"383",
+			"subJectId":"47",
+			"classId":"2"
+		}]
+}
+
+
+
+
+单科全科百分比
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/course/getcoursepercentage
+{
+	"context":
+	{
+		"tenantId":"1",
+		"userId":"2450514279858432"
+	},
+	"data":
+	{
+			"taskId": "1590347376959160320",
+			"classId":"1",
+			"acadTermId":"383",
+			"acadClasfId":"14",
+			"sex":0,
+			"singleSubjectStart": 80,
+			"singleSubjectEnd": 90,
+			"allSubjectStart": 0,
+			"allSubjectEnd": 0
+			
+		}
+	
+}
+
+删除课程
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/course/delete
+{
+	"context":
+	{
+		"tenantId":"1",
+		"userId":"2450514279858432"
+	},
+	"data":"1590386381424689152"
+}
+
+
+发布
+http://fwdemo.com:8080/dubbos-schooladmin-web/schooladmin/courseselection/task/taskpublish
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/task/taskpublish
+
+{
+	"context":
+	{
+		"tenantId":"1",
+		"userId":"2450514279858432"
+	},
+	"data":{
+			"startDate":"2018-01-01 12:12:12",		
+			"endDate":"2018-07-06 12:12:12",
+			"taskId":"1590347376959160320",
+			"courseTypeList":[{
+			"courseNbrMin":"20",
+			"courseTypeId":"211"
+
+			},
+			{
+				"courseNbrMin":"25",
+				"courseTypeId":"212"
+			}]
+	}	
+}
+
+
+
+显示发布窗口
+http://fwdemo.com:8080/dubbos-schooladmin-web/schooladmin/courseselection/task/category
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/task/category
+{
+	"context":
+	{
+		"tenantId":"1",
+		"userId":"2450514279858432"
+	},
+	"data":
+	{
+		"acadClasfId":"14",
+		"acadTermId":"383",
+		"taskId":"1589911999306792961"
+
+	}
+}
+
+
+
+
+添加偏好
+http://fwdemo.com:8080/dubbos-schooladmin-web/schooladmin/courseselection/rule/addrule
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/rule/addrule
+{
+	"context": {
+		"tenantId": "1",
+		"userId": "2450514279858432"
+	},
+	"data": [{
+			"classCourseID": "1",
+			"requestTaskID": "1590347376959160320",
+			"courseOfferID": "1",
+			"studentSex":0,
+			"singleSubjectStart": 80,
+			"singleSubjectEnd": 90,
+			"allSubjectStart": 80,
+			"allSubjectEnd": 95,
+			"requestLimited":10
+
+		},
+		{
+			"classCourseID": "1",
+			"requestTaskID": "1590347376959160320",
+			"courseOfferID": "2",
+			"studentSex": 0,
+			"singleSubjectStart": 80,
+			"singleSubjectEnd": 90,
+			"allSubjectStart": 80,
+			"allSubjectEnd": 95,
+			"requestLimited":12
+
+		}
+	]
+}
+
+
+
+显示偏好
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/course/showpreference
+{
+	"context":
+	{
+		"tenantId":"1",
+		"userId":"2450514279858432"
+	},
+	"data":
+	{
+		"acadClasfId":"14",
+		"courseMultipleId":"1590351948570165248,1590351948616302592",
+		"requestTaskId":"1590347376959160320"
+
+	}
+}
+
+
+
+
+按教学模式 年级 学科 显示课程层次
+http://fwdemo.com:8090/dubbos-schooladmin-web/schooladmin/courseselection/course/
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/course/getcourselevellist
+{
+	"context":
+	{
+		"tenantId":"1",
+		"userId":"2450514279858432"
+	},
+	"data":
+	{
+		"subJectId":"47",
+		"acadClasfId":"14",
+		"modelId":"212",
+		"acadTermId":"383"
+
+	},
+	"pageSize":3,
+	"pageIndex":1
+}
+修改时间段
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/task/updatedate
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/task/updatedate
+{
+	"context":
+	{
+		"tenantId":"1",
+		"userId":"2450514279858432"
+	},
+	"data":
+	{
+		"id":"1590347376959160320",
+		"startDate":"2018-01-01 12:12:12",
+		"endDate":"2018-01-30 12:12:12"
+
+	}
+}
+
+任务编辑
+http://fwdemo.com:8090/dubbos-schooladmin-web/schooladmin/courseselection/task/taskedit
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/task/taskedit
+{
+	"context":
+	{
+		"tenantId":"1",
+		"userId":"2450514279858432"
+	},
+	"data":
+	{
+		"id":"1590442154700832768",
+		"notes":"测试修改"
+
+	}
+}
+
+取消发布
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/task/removepublish
+
+{
+	"context":
+	{
+		"tenantId":"1",
+		"userId":"2450514279858432"
+	},
+	"data":"1590442154700832768"
+}
+
+修改需要的取单个任务
+http://fwdemo.com:8090/dubbos-schooladmin-web/schooladmin/courseselection/task/singletask
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/task/singletask
+{
+	"context":
+	{
+		"tenantId":"1",
+		"userId":"2450514279858432"
+	},
+	"data":"1589623241251487745"
+}
+
+删除任务
+http://fwdemo.com:8090/dubbos-schooladmin-web/schooladmin/courseselection/task/taskedelete
+http://localhost:8080/dubbos-schooladmin-web/schooladmin/courseselection/task/taskedelete
+{
+	"context":
+	{
+		"tenantId":"1",
+		"userId":"2450514279858432"
+	},
+	"data":"1589818864093364225"
+}
+ 
+
+
+

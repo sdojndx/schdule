@@ -1,0 +1,120 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre, 
+form,fieldset,input,textarea,p,blockquote,th,td,button { 
+    padding: 0; 
+    margin: 0; 
+} 
+table { 
+    border-collapse: collapse; 
+    border-spacing: 0; 
+} 
+fieldset,img { 
+    border: 0; 
+} 
+address,caption,cite,code,dfn,em,i,strong,th,var { 
+    font-weight: normal; 
+    font-style: normal; 
+} 
+ol,ul { 
+    list-style: none; 
+} 
+caption,th { 
+    text-align: left; 
+} 
+h1,h2,h3,h4,h5,h6 { 
+    font-weight: normal; 
+    font-size: 100%; 
+} 
+q:before,q:after { 
+    content:”; 
+} 
+abbr,acronym { 
+    border: 0; 
+}
+a,input,select,textarea {
+    outline: none;
+    text-decoration: none;
+}
+input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button {
+    border: none;
+    outline: none;
+}
+.webuploader-pick {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 日期选择样式 */
+.ant-calendar-picker-input.ant-input{
+    font-family: "Monospace Number", "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #fff;
+    background-image: none;
+    border: 0;
+    border-radius: 4px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  
+span.ant-calendar-range-picker-separator {
+    color: rgba(0, 0, 0, 0.45);
+    width: 10px;
+    display: inline-block;
+    height: 100%;
+    margin: 0 25px;
+}
+.ant-input:hover {
+    border: none;
+  }
+  .ant-input:focus {
+    border: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+.ant-calendar-picker-input.ant-input:focus {
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+}
+.ant-calendar-picker-input.ant-input:active {
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+}
+.ant-calendar-picker-input.ant-input:hover {
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+}
+.ant-calendar-picker-input.ant-input:visited {
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+/************ReactCSSTransitionGroup*************/
+
+.search-enter{
+    height:0px; 
+}
+.search-enter{
+    height:0px; 
+}

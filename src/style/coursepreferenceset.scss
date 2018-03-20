@@ -1,0 +1,101 @@
+
+/*  表格  */
+.courseList{
+	//width: 100%;
+	border: 1px solid #e2e2e2;
+	margin:15px 25px 50px 25px;
+	text-align: center;
+	background-color: #fff;
+	table{
+		width: 100%;
+		font-size:14px;
+		tr:nth-child(even) {
+			background-color: #e8f6ff;
+		}
+		tr{
+			color: #666666;
+			height: 50px;
+			&:hover{
+				color: #3e91eb;
+				background-color: #cfe6ff;
+				td{
+					input[type="text"]{
+						color: #3e91eb;
+						background-color: #ffffff;
+						border: 1px solid #c8d6e1;
+					}
+					select{
+						/*color: #3e91eb;
+						background: #FFFFFF url("../images/studentmanage/sm_arrow2.png") top right no-repeat;
+						border: 1px solid #c8d6e1;*/
+					}
+				}
+			}
+			td{
+				input[type="text"]{
+					width: 44px;
+					height: 28px;
+					line-height: 28px;
+					display: inline-block;
+					color: #666666;
+					-web-kit-appearance:none;
+					-moz-appearance: none;
+					outline: none;
+					border: 1px solid transparent;
+					background-color: transparent;
+					padding-left:7px;
+				}
+				select{
+					/*color: #666666;
+					appearance:none;
+					-moz-appearance:none;
+					-webkit-appearance:none;
+					background-color: transparent;
+					outline: none;
+					border: 1px solid transparent;
+					padding: 5px 22px 5px 8px;*/
+				}
+				select::-ms-expand { display: none; }
+				.total_score{
+					//color: #d2e8ff;
+				}
+			}
+		}
+		.list_outfit{
+			height: 35px;
+			th,td{
+				color: #ffffff;
+				text-align: center;
+				background-color: #9ec8f5;
+				position: relative;
+				.th_line{
+					width: 170px;
+					line-height: 30px;
+					display: inline-block;
+					border-bottom: 1px solid #b1d3f7;
+				}
+				i{
+					height: 22px;
+					line-height: 22px;
+					display: block;
+					position: absolute;
+					top: 25px;
+					right:0;
+					border-left: 1px solid #b1d3f7;
+					z-index: 10;
+				}
+			}
+		}
+	}
+}
+.content_bottom{
+	display: block;
+	height: 40px;
+}
+.pass_step{
+	width: 100px;
+	height: 36px;
+	display: inline-block;
+	line-height: 36px;
+	margin-left: 20px;
+}

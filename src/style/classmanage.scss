@@ -1,0 +1,291 @@
+@import './common.scss';
+@import './classroom.scss';
+@import './selectcourse.scss';
+
+.studentopt_bigbox {
+  width: 980px;
+  height: 950px;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin: 0 0 0 210px;
+}
+
+.studentopt_title {
+  height: 45px;
+  line-height: 45px;
+  background-color: #f8f8f8;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+  .studentopt_firsttitle {
+    color: $commonblue;
+  }
+  select {
+    width: 196px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #666666;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("../images/studentmanage/sm_arrow1.png") top right no-repeat;
+    padding-left: 10px;
+    border: 1px solid #d4d4d4;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+}
+
+
+/* 表格样式 */
+
+.listTitle {
+  color: #666666;
+  height: 55px;
+  padding: 0 25px 0 25px;
+  .listTitleName {
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 12px;
+  }
+  strong {
+    color: $posColor;
+  }
+}
+
+.studentList {
+  //width: 100%;
+  border: 1px solid #e2e2e2;
+  margin: 15px 25px 0;
+  text-align: center;
+  table {
+    width: 100%;
+    font-size: 14px;
+    table-layout: fixed;
+    tr:nth-child(odd) {
+      background-color: #e8f6ff;
+    }
+    tr {
+      color: #666666;
+      height: 50px;
+      text-overflow:ellipsis;
+      &:hover {
+        color: #3e91eb;
+        background-color: #c4e8ff;
+      }
+      td {
+        overflow: hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+        .checkbox_student {
+          width: 13px;
+          height: 13px;
+        }
+        .operation {
+          display: inline-block;
+          text-decoration: none;
+          color: #3e91eb;
+          padding: 2px;
+          margin: 0 8px;
+          border-radius: 3px;
+          &:hover {
+            color: #ffffff;
+            background-color: #3e91eb;
+          }
+        }
+      }
+    }
+    .list_outfit {
+      height: 60px;
+      th {
+        text-align: center;
+        background-color: #9ec8f5;
+        margin-right: -1px;
+        span {
+          color: #ffffff;
+          height: 22px;
+          line-height: 22px;
+          display: block;
+          margin: 20px 0;
+          border-right: 1px solid #b1d3f7;
+          &.list_first_th {
+            display: inline;
+          }
+        }
+      }
+      .first_th_stumanage {
+        width: 75px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        position: relative;
+        .checkbox_stumanage {
+          position: absolute;
+          top: 25px;
+          left: 15px;
+        }
+      }
+      .second_th_stumanage {
+        width: 45px;
+      }
+      .three_th_stumanage {
+        width: 105px;
+      }
+      .four_th_stumanage {
+        width: 80px;
+      }
+      .five_th_stumanage {
+        width: 90px;
+      }
+      .six_th_stumanage {
+        width: 50px;
+      }
+      .seven_th_stumanage {
+        width: 50px;
+      }
+      .eight_th_stumanage {
+        width: 60px;
+      }
+      .nine_th_stumanage {
+        width: 75px;
+      }
+      .ten_th_stumanage {
+        width: 305px;
+      }
+    }
+  }
+}
+
+.class_box_big_top {
+  width: 960px;
+  padding: 25px 0 0 20px;
+  box-sizing: border-box;
+  .class_box_text {
+    width: 960px;
+    height: 119px;
+    border-bottom: 1px solid #e2e2e2;
+    position: relative;
+    .class_grade_top {
+      position: absolute;
+      top: 35px;
+      left: -15px;
+    }
+    .class_classname_top {
+      position: absolute;
+      top: 80px;
+      left: -15px;
+    }
+    li {
+      line-height: $narmalFontSize;
+      padding: 5px;
+      margin: 0 14px;
+      float: left;
+      font-size: $narmalFontSize;
+      color: #666666;
+      &.class_blue_active {
+        color: #f8f8f8;
+        background-color: $commonblue;
+        border-radius: 3px;
+      }
+    }
+  }
+  .line_student {
+    display: block;
+    width: 927px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  .class_box_btn {
+    width: 960px;
+    height: 75px;
+    line-height: 75px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    position: relative;
+    h3 {
+      color: #333333;
+      font-size: $largeFontSize;
+      display: inline-block;
+      margin-left: -15px;
+    }
+    .class_choose_list {
+      font-size: $narmalFontSize;
+      color: #666666;
+      float: right;
+      i {
+        color: #f59524;
+      }
+    }
+  }
+}
+
+.exportForm {
+  float: right;
+  width: 144px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 17px;
+  background-color: #e8f6ff;
+  border: 1px solid #95cef5;
+  border-radius: 3px;
+  margin-left: 10px;
+  margin-top: 20px;
+  color: #3e91eb;
+  cursor: pointer;
+  &:hover {
+    background-color: #c3e7ff;
+  }
+  &.exportForm_green {
+    color: #ffffff;
+    background-color: #5adad0;
+    border: 0;
+  }
+  &.exportForm_orange {
+    color: #ffffff;
+    background-color: #f59524;
+    border: 0;
+  }
+}
+
+.alert_auto_division {
+  width: 848px;
+  height: 70px;
+  line-height: 70px;
+  border: 1px solid #e2e2e2;
+  background-color: #fff;
+  margin: 0px auto 35px;
+  text-align: center;
+  font-size: 16px;
+  .alert_auto_info {
+    color: #666666;
+    margin: 0 60px;
+  }
+}
+
+.alert_auto_add .form_text_box {
+  font-size: 16px;
+}
+
+.alert_auto_add.form_box span {
+  font-size: 16px;
+}
+
+.alert_auto_checkbox {
+  text-align: center;
+  margin-top: 40px;
+  .alert_checkbox_box {
+    margin-right: 40px;
+    display: inline-block;
+    font-size: 16px;
+    color: #666666;
+    .alert_auto_checkbox {}
+  }
+}

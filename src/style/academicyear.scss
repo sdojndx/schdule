@@ -1,0 +1,271 @@
+@import "./common.scss";
+/*-------------------学年管理---------------------*/
+
+.listDetail {
+	//height: 200px;
+	background-color: #fff;
+	overflow: hidden;
+	padding-bottom: 100px;
+	.notice {
+		font-size: 12px;
+		color: #999;
+		margin: 20px 0 0 25px;
+		display: block;
+	}
+	.main_item {
+		width: 298px;
+		height: 398px;
+		border: 1px solid #ccc; //box-shadow: 5px 5px 5px #ccc;
+		float: left;
+		margin: 60px 0 0 75px; //padding-bottom: 100px;
+		background: url(../images/subpage/sy_bg.png) center no-repeat;
+		position: relative;
+		.studyState_notBegin {
+			width: 70px;
+			height: 30px;
+			display: block;
+			position: absolute;
+			right: 10px;
+			top: -3px;
+			background: url(../images/subpage/sy_state.png) 0 0 no-repeat;
+			text-align: center;
+			font-size: 15px;
+			color: #fff;
+			line-height: 30px;
+		}
+		.studyState_now {
+			width: 70px;
+			height: 30px;
+			display: block;
+			position: absolute;
+			right: 10px;
+			top: -3px;
+			background: url(../images/subpage/sy_state.png) -380px 0 no-repeat;
+			text-align: center;
+			font-size: 15px;
+			color: #fff;
+			line-height: 30px;
+		}
+		.studyState_over {
+			width: 70px;
+			height: 30px;
+			display: block;
+			position: absolute;
+			right: 10px;
+			top: -3px;
+			background: url(../images/subpage/sy_state.png) -765px 0 no-repeat;
+			text-align: center;
+			font-size: 15px;
+			color: #fff;
+			line-height: 30px;
+		}
+		.studyName_font {
+			color: #fff;
+			font-size: 30px;
+			margin: 84px 0 170px 0;
+			text-align: center;
+		}
+		.studyTime_font {
+			text-align: center;
+			color: #999;
+			font-size: 15px;
+			margin-bottom: 20px;
+		}
+		.studyEdit_btns {
+			.studyEdit,
+			span {
+				display: inline-block;
+				width: 120px;
+				height: 35px;
+				color: #fff;
+				text-align: center;
+				line-height: 35px;
+				border-radius: 3px;
+				cursor: pointer;
+				margin-left: 22px;
+				text-decoration: none;
+			}
+			.studyEdit_left {
+				background-color: #3e91eb;
+				&:hover {
+					background-color: #1a88ff;
+				}
+			}
+			.studyEdit_right {
+				background-color: #f59524;
+				margin-left: 20px;
+				&:hover {
+					background-color: #fc8800;
+				}
+			}
+			.studyEdit_left_unclick {
+				background-color: #c6c6c6;
+			}
+			.studyEdit_right_unclick {
+				background-color: #c6c6c6;
+				margin-left: 20px;
+			}
+		}
+	}
+}
+
+.btn_con_top {
+	overflow: hidden;
+	margin: 20px 25px 0;
+	text-align: center;
+}
+
+.btn_con_bottom {
+	overflow: hidden;
+	margin: 30px 25px 0;
+	text-align: center;
+}
+ /*弹窗背景*/
+ .delete_bg {
+	float: left;
+	margin: 54px 0 0 73px;
+	width: 161px;
+	height: 175px;
+	background: url("../images/studentmanage/delete.png") center center no-repeat;
+}
+.list_con {
+	//width: 100%;
+	border: 1px solid #e2e2e2;
+	margin: 15px 25px 0;
+	text-align: center;
+	table {
+		width: 100%;
+		font-size: 14px;
+		tr{
+			transition: all .3s;
+			:global(.ant-calendar-picker-clear){
+				display: none;
+		     }
+		}
+		tr:nth-child(odd) {
+			background-color: #eff9ff;
+			:global(.ant-calendar-picker-input.ant-input){
+		      background-color: #eff9ff;
+		    }
+		}
+		tr:hover {
+		    background-color: #c4e8ff;
+		    :global(.ant-calendar-picker-input.ant-input){
+		      background-color: #c4e8ff;
+		      :global(.ant-calendar-picker-icon){
+		      	display: block;
+		        background-color: #c4e8ff;
+		      }
+		    }
+		    :global(.ant-calendar-picker-input.ant-input):hover{
+		      background-color: #fff;
+		      :global(.ant-calendar-picker-icon){
+		      	display: block;
+		        background-color: #fff;
+		      }
+		    }
+		    .edit_pen {
+		      opacity: 1;
+		    }
+		    .edit_delete {
+		      opacity: 1;
+		    }
+		    .edit_time {
+		      opacity: 1;
+		    }
+		 }
+		.list_outfit {
+			th {
+				text-align: center;
+				background-color: #f7f7f7;
+				margin-right: -1px;
+				span {
+					color: #333;
+					height: 22px;
+					line-height: 22px;
+					display: block;
+					margin: 20px 0;
+					border-right: 1px solid #e2e2e2;
+				}
+			}
+		} 
+	}
+}
+.trtotal_tr {
+  height: 50px;
+  color: #666666;
+  td {
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+    input {
+      width: 140px;
+      height: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: #666666;
+    }
+  }
+  .tdOne_width {
+    width: 100px;
+  }
+  .tdTwo_width {
+    width: 235px;
+    .edit_pen {
+      width: 20px;
+      height: 20px;
+      background: url('../images/classroom/edit_pen.png') no-repeat center left;
+      opacity: 0;
+      cursor: pointer;
+      position: absolute;
+      top: 15px;
+      right: 8px;
+    }
+  }
+  .tdThree_width {
+    width: 210px;
+  }
+  .tdFour_width {
+    .edit_time {
+      width: 21px;
+      height: 19px;
+      background: url('../images/classroom/edit_time.png') no-repeat center top;
+      opacity: 0;
+      cursor: pointer;
+      position: absolute;
+      top: 15px;
+      right: 8px;
+    }
+  }
+  .tdFive_width {
+    width: 260px;
+    color: #3e91eb;
+    .edit_delete {
+      width: 15px;
+      height: 15px;
+      margin-right: 35px;
+      background: url('../images/classroom/edit_delete.png') no-repeat center left;
+      opacity: 0;
+      cursor: pointer;
+      position: absolute;
+      top: 15px;
+      right: 10px;
+    }
+  }
+  
+  .list_outfit {
+    th {
+      text-align: center;
+      background-color: #f7f7f7;
+      margin-right: -1px;
+      span {
+        color: #333;
+        height: 22px;
+        line-height: 22px;
+        display: block;
+        margin: 20px 0;
+        border-right: 1px solid #e2e2e2;
+      }
+    }
+  }
+}

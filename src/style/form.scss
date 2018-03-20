@@ -1,0 +1,374 @@
+@import './common.scss';
+.classroom_addlist_full {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #474747;
+	.classroom_addlist_content {
+		width: 902px;
+		height: 467px;
+		background-color: #fff;
+		margin: 120px auto 0;
+	}
+	.classroom_addlist_title {
+		width: 100%;
+		height: 50px;
+		background: -moz-linear-gradient(left, #209cff, #68e0cf);
+		background: -o-linear-gradient(left, #209cff, #68e0cf);
+		background: -webkit-gradient(linear, 0% 100%, 100% 0%, from(#209cff), to(#68e0cf));
+		filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#209cff', endColorStr='#68e0cf', gradientType='0');
+		/*IE8+*/
+		background: -ms-linear-gradient(left, #209cff, #68e0cf);
+		/* IE 10 */
+		FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#209cff, endColorStr=#68e0cf, gradientType='0');
+		/* IE < 10 */
+	}
+	.classroom_input_box {
+		box-sizing: border-box;
+		padding-top: 60px;
+	}
+}
+    
+.form_box2 {
+	display: inline-block;
+	margin: 0 30px 0;
+	font-size: 16px;
+	color: #999999;
+	margin-top: 30px;
+	:global(.ant-calendar-picker){
+		&:focus :global(.ant-calendar-picker-input.ant-input){
+			box-shadow: none;
+			border-color: transparent;
+		}
+		:global(.ant-calendar-range-picker-separator){
+			margin: 0 30px;
+			vertical-align: middle;
+		}
+		:global(.anticon.anticon-cross-circle.ant-calendar-picker-clear){
+			display: none;
+		}
+	}
+	.form_text_box2 {
+		text-align: left;
+		margin-bottom: 5px;
+	}
+	input {
+		width: 190px;
+		height: 36px;
+		border: 1px solid #d2d2d2;
+		border-radius: 3px;
+		box-sizing: border-box;
+		color: #999999;
+		padding-left: 5px;
+		box-sizing: border-box;
+		font-size: 14px;
+	}
+	.select_div {
+		width: 190px;
+	}
+	select {
+		width: 230px;
+	}
+	.form_name2 {
+		margin-bottom: 5px;
+	}
+}
+
+.form_box {
+	font-size: 16px;
+	color: #999999;
+	:global(.ant-calendar-picker){
+		display: inline-block;
+		&:focus :global(.ant-calendar-picker-input.ant-input){
+			box-shadow: none;
+			border-color: transparent;
+		}
+		:global(.anticon.anticon-cross-circle.ant-calendar-picker-clear){
+			display: none;
+		}
+		:global(.ant-calendar-picker-input.ant-input){
+			line-height: 44px;
+			input {
+				width: 140px;
+				height: 30px;
+				color: #999999;
+				border: 1px solid #d2d2d2;
+				border-radius: 3px;
+			}
+			span {
+				margin: 0 10px
+			}
+		} 
+	}
+	.form_text_box {
+		width: 200px;
+		text-align: right;
+		display: inline-block;
+		margin: 10px 10px 10px 15px;
+		vertical-align: top;
+	}
+
+	.textInput {
+		width: 190px;
+		height: 30px;
+		margin-top: 5px;
+		border: 1px solid #d2d2d2;
+		color: #999999;
+		font-size: 14px;
+		border-radius: 3px;
+		padding-left: 5px;
+		box-sizing: border-box;
+	}
+	.select_div {
+		width: 190px;
+	}
+	select {
+		width: 230px;
+		&::-ms-expand {
+			display: none;
+		}
+	} 
+	// select::-ms-expand {
+	// 	display: none;
+	// }
+	textarea {
+		resize: none;
+		width: 560px;
+		height: 90px;
+		border-radius: 3px;
+		font-size: 14px;
+		border: 1px solid #d2d2d2;
+		color: #999999;
+		padding-left: 5px;
+		margin-top: 10px;
+		box-sizing: border-box;
+		overflow-y: scroll;
+	}
+	.form_radio_yesorno_box {
+		display: inline-block;
+		margin: 9px 0 0 15px;
+		.form_radio_textbox {
+			display: inline-block;
+			margin-right: 20px;
+			.form_radio_yesorno {
+				margin-right: 10px;
+			}
+		}
+	}
+	.form_bottom_txt {
+		color: #d6d6d6;
+		font-size: 14px;
+		position: relative;
+		left: 17px;
+		top: 110px;
+	}
+	button {
+		font-size: 16px;
+		color: #fff;
+		padding: 3px 10px;
+		border: 1px solid #e0e0e0;
+		border-radius: 3px;
+		margin-left: 15px;
+		margin-top: 5px;
+		&.btn_active {
+			color: $spaceBgColor;
+			background-color: $commonblue;
+		}
+	}
+	&.alert_auto_add {
+		padding: 0 0 0 210px;
+	}
+	.uploadContent {
+		display: inline-block;
+		line-height: 30px;
+		max-width: 700px;
+		overflow: hidden;
+		padding: 13px;
+		box-sizing: border-box;
+		.upload {
+			display: inline-block;
+			width: 100px;
+			height: 30px;
+			position: relative;
+			top: -30px;
+			left: 0;
+			opacity: 0;
+		}
+		.uploadBoxUp {
+			position: relative;
+			left: 0;
+			top: 0;
+			width: 100px;
+			height: 20px;
+			border-radius: 3px;
+			line-height: 20px;
+			text-align: center;
+			background: #ccc;
+			color: #fff;
+			cursor: pointer;
+		}
+		.uploadList{
+			margin-top: -20px;
+			.uploadElem{
+				display: inline;
+				display: inline-block;
+				min-width:100px;
+				line-height: 20px;
+				color:#666666;
+				padding: 0px 20px;
+				height: 20px;
+				background-color: white;
+				position: relative;
+				border:1px solid #95cef5;
+				border-radius: 3px;
+				margin-right:20px;
+				overflow: hidden;
+				.uploadElem_scale{
+					position: absolute;
+					top:0;
+					left: 0;
+					height: 100%;
+					text-indent: 20px;
+					background-color: #e8f6ff;
+					overflow: hidden;
+				}
+				.uploadRemove{
+					position: absolute;
+					width:20px;
+					right:0px;
+					top:0px;
+					display: none;
+					color:#5a9fed;
+					text-align: center;
+					cursor: pointer;
+				}
+				&:hover{
+					.uploadRemove{
+						display: block;
+					}
+				}
+			}
+		}
+	}
+	.datespace{
+		display: inline-block;
+		/*.ant-calendar-picker-input{
+			
+		}*/
+	}
+}
+
+.form_star {
+	color: red;
+}
+
+.form_name {
+	color: #999999;
+	font-size: 16px;
+}
+
+.form_after_text {
+	color: #d6d6d6;
+	margin: 10px 5px;
+}
+
+.form_radio {
+	margin: 10px 0 0 0;
+}
+
+.select_select_right::-ms-expand,
+.nav_select::-ms-expand {
+	display: none;
+}
+
+.nav_select {
+	margin: 10px 10px 0 0;
+}
+
+.form_box3 {
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #666666;
+	.form_text_box3 {
+		float: left;
+		width: 60px;
+		text-align: right;
+	}
+	.form_star {}
+	.form_name3 {}
+	.singleselect_opt {
+		display: inline-block;
+		margin: -5px 0 15px 20px;
+		max-width: 130px;
+		min-width: 90px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		border-radius: 5px;
+		.singleselect_active {
+			display: inline-block;
+			color: #fff;
+			background-color: #3e91eb;
+			border-radius: 5px;
+			font-size: 14px;
+			padding: 5px;
+			cursor: pointer;
+		}
+		.singleselect {
+			display: inline-block;
+			border-radius: 3px;
+			font-size: 14px;
+			padding: 5px;
+			cursor: pointer;
+		}
+	}
+}
+
+//公共 select
+.select_div {
+	display: inline-block;
+	border: 1px solid #d2d2d2;
+	border-radius: 3px;
+	vertical-align: middle;
+	overflow: hidden;
+	select {
+		line-height: 26px;
+		height: 32px;
+		color: #999999;
+		font-size: 14px;
+		border: none;
+		padding-left: 5px;
+		padding-right: 22px;
+		box-sizing: border-box;
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		background: #fff url("../images/studentmanage/select_right.png") center right no-repeat;
+		background-position: 167px;
+	}
+}
+
+//checkbox
+.item_unchecked{
+	margin: 0px 10px 10px 0px;
+	font-size: 14px;
+	padding: 5px;
+	border-radius:4px;
+	border:1px solid #d2d2d2;
+	display: inline-block;
+	cursor: pointer;
+	color: #999999;
+}
+.item_checked{
+	margin: 0px 10px 10px 0px;
+	font-size: 14px;
+	padding: 5px;
+	border-radius:4px;
+	display: inline-block;
+	border:1px solid #3e91eb;
+	cursor: pointer;
+	background:#3e91eb;
+	color: #fff;
+}

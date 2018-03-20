@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://localhost:8080/dubbos-schooladmin-web/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+</head>
+<body><table><tbody><tr><td>租户：</td><td><input id="tenantId" type="text"></td><td>用户：</td><td><input id="userId" type="text"></td><td>账号类型：</td><td><input id="accountType" type="text"></td><td><input onclick="setCookie()" type="button" value="保存"></td> </tr></tbody></table>
+<script src="./dubbos-schooladmin-web_files/jquery.js"></script>
+<script src="./dubbos-schooladmin-web_files/jquery.cookie.js"></script>
+<script type="text/javascript">
+var host="http://172.16.16.164:888/test/";
+function getUrl(obj){ return obj.parentNode.parentNode.childNodes[0].innerText;}
+function getInput(obj){ return obj.parentNode.parentNode.childNodes[1].innerText;}
+function getValue(obj){return obj.parentNode.getElementsByTagName('textarea')[0].value;}
+function setValue(obj,txt){return obj.parentNode.getElementsByTagName('textarea')[0].value=txt;}
+function test(obj){if(obj.value=='getParam'){getParam(obj);}else if(obj.value=='test'){ceshi(obj);}else if (obj.value=='save'){save(obj);}}
+function getParam(obj) {$.getJSON(host+'gettestparam?callback=?',{name:getUrl(obj)},function(data) {var p=(data.value == ''?getInput(obj):data.value);setValue(obj,p);obj.value='test';});};
+function getCxt(name){return document.getElementById(name).value;}
+function getData(obj){var data =JSON.parse(getValue(obj));data.context={tenantId:getCxt('tenantId'),userId:getCxt('userId'),accountType:getCxt('accountType')};return JSON.stringify(data)}function ceshi(obj){$.ajax({type:'POST',url:getUrl(obj),data:getData(obj),contentType:'application/json;charset=utf-8',dataType:'json',success:function(data){alert(JSON.stringify(data,null,2));}});}
+function save(obj){$.getJSON(host+'addtestparam?callback=?',{name:getUrl(obj),value:getValue(obj)}, function(data) { if (data.status == 1) {obj.value='test'; } else { alert('失败'); } });}
+function change(obj) {obj.parentNode.getElementsByTagName('input')[0].value='save'; }function setCxt(name){var value= $.cookie('ck_'+name);document.getElementById(name).value=(value?value:'');}
+function init() {setCxt('tenantId');setCxt('userId');setCxt('accountType');};init()
+function setCk(name){var value=document.getElementById(name).value;$.cookie('ck_'+name,value,{expires:100});}
+function setCookie(){setCk('tenantId');setCk('userId');setCk('accountType');alert('ok');}
+</script>
+<div>
+<br>interface com.chinaeducloud.common.interfaces.SystemInterface<table><thead><tr><th>url</th><th>input</th><th>output</th><th>test</th></tr></thead><tbody><tr><th>common/system/setsysmsggroupread</th><td><pre>{
+	
+	"data":"str",
+	"metaDataCode":"str"
+}</pre></td><td><pre>123</pre></td><td><input type="button" value="getParam" onclick="test(this)"><br><textarea onkeyup="change(this)" rows="10"></textarea></td></tr><tr><th>common/system/getsystemmessagegroup</th><td><pre>{
+	
+	"data":"str",
+	"metaDataCode":"str"
+}</pre></td><td><pre>{
+	"items":[{
+		"count":123,
+		"name":"str",
+		"type":"str"
+	}],
+	"msg":"str",
+	"totalCount":123
+}</pre></td><td><input type="button" value="getParam" onclick="test(this)"><br><textarea onkeyup="change(this)" rows="10"></textarea></td></tr><tr><th>common/system/getsystemmessage</th><td><pre>{
+	
+	"data":"str",
+	"extendParams":[{
+		"fieldName":"str",
+		"tag":"str",
+		"value":{}
+	}],
+	"metaDataCode":"str",
+	"pageIndex":123,
+	"pageSize":123,
+	"sortName":"str",
+	"sortType":123
+}</pre></td><td><pre>{
+	"items":[{
+		"completeRate":123,
+		"content":"str",
+		"createDate":"str",
+		"fileName":"str",
+		"fromUserId":"str",
+		"id":"str",
+		"isRead":0,
+		"mqCode":"str",
+		"mqName":"str",
+		"state":"str",
+		"toUserId":"str",
+		"type":"str"
+	}],
+	"msg":"str",
+	"totalCount":123
+}</pre></td><td><input type="button" value="getParam" onclick="test(this)"><br><textarea onkeyup="change(this)" rows="10"></textarea></td></tr><tr><th>common/system/getaefsauth</th><td><pre>{
+	
+	"data":"str",
+	"metaDataCode":"str"
+}</pre></td><td><pre>{
+	"code":123,
+	"data":{
+		"appId":"str",
+		"sign":"str",
+		"timestamp":"str",
+		"uploadPath":"str",
+		"userId":"str"
+	},
+	"errorCode":123,
+	"extendedData":{},
+	"message":"str",
+	"tag":"str"
+}</pre></td><td><input type="button" value="getParam" onclick="test(this)"><br><textarea onkeyup="change(this)" rows="10"></textarea></td></tr><tr><th>common/system/setsysmsgread</th><td><pre>{
+	
+	"data":"str",
+	"metaDataCode":"str"
+}</pre></td><td><pre>123</pre></td><td><input type="button" value="getParam" onclick="test(this)"><br><textarea onkeyup="change(this)" rows="10"></textarea></td></tr><tr><th>common/system/execlimport</th><td><pre>{
+	
+	"extName":"str",
+	"fileName":"str",
+	"jsonParams":"str",
+	"mqCode":"str",
+	"msgId":"str",
+	"msgType":"str",
+	"params":{},
+	"path":"str"
+}</pre></td><td><pre>{
+	"code":123,
+	"data":"str",
+	"errorCode":123,
+	"extendedData":{},
+	"message":"str",
+	"tag":"str"
+}</pre></td><td><input type="button" value="getParam" onclick="test(this)"><br><textarea onkeyup="change(this)" rows="10"></textarea></td></tr><tr><th>common/system/getdropdowndata</th><td><pre>{
+	
+	"data":{
+		"dataids":["str"],
+		"id":"str",
+		"id1":"str",
+		"id2":"str",
+		"id3":"str",
+		"id4":"str",
+		"id5":"str",
+		"id6":"str",
+		"keyword":"str",
+		"pageIndex":123,
+		"type":"str"
+	},
+	"metaDataCode":"str"
+}</pre></td><td><pre>[{
+	"checked":false,
+	"extendData":"str",
+	"name":"str",
+	"tag":"str",
+	"value":"str"
+}]</pre></td><td><input type="button" value="getParam" onclick="test(this)"><br><textarea onkeyup="change(this)" rows="10"></textarea></td></tr><tr><th>common/system/getallconsts</th><td><pre>{
+	
+	"data":"str",
+	"metaDataCode":"str"
+}</pre></td><td><pre>{}</pre></td><td><input type="button" value="getParam" onclick="test(this)"><br><textarea onkeyup="change(this)" rows="10"></textarea></td></tr></tbody></table><br>interface com.chinaeducloud.student.selectcourses.interfaces.MySelectionInterface<table><thead><tr><th>url</th><th>input</th><th>output</th><th>test</th></tr></thead><tbody><tr><th>student/selectcourses/courseselection/select</th><td><pre>{
+	
+	"data":{
+		"endDate":1517553113262,
+		"extendObject":{},
+		"id":"str",
+		"startDate":1517553113262,
+		"taskStatus":1
+	},
+	"metaDataCode":"str"
+}</pre></td><td><pre>{
+	"code":123,
+	"data":{
+		"acadTermName":"str",
+		"acadYearName":"str",
+		"appendix":["str"],
+		"createBy":"str",
+		"extendObject":{},
+		"external_uid":"str",
+		"modifyDate":1517553113336,
+		"orgId":"str",
+		"requestCompleteNbr":123,
+		"requestTaskName":"str",
+		"status":0,
+		"taskDetail":{
+			"courseTypeList":[{
+				"classCourseList":[{
+					"courseName":"str",
+					"courseOfferinglist":[{
+						"choosenNum":123,
+						"classCourseID":"str",
+						"classCourseName":"str",
+						"courseTypeID":"str",
+						"courseTypeName":"str",
+						"extendObject":{},
+						"id":"str",
+						"instrLevelID":"str",
+						"instrLevelName":"str",
+						"instrTypeID":"str",
+						"instrTypeName":"str",
+						"nbrExpectedStdents":123,
+						"notRegistNum":123,
+						"requestLimited":123
+					}],
+					"extendObject":{},
+					"id":"str",
+					"instrTypeID":"str",
+					"instrTypeName":"str",
+					"note":"str"
+				}],
+				"courseCount":1,
+				"courseNbrMin":123,
+				"courseTypeId":"str",
+				"courseTypeName":"str",
+				"extendObject":{},
+				"id":"str",
+				"requestTaskId":"str",
+				"requestTaskName":"str",
+				"status":123
+			}]
+		}
+	},
+	"errorCode":123,
+	"extendedData":{},
+	"message":"str",
+	"tag":"str"
+}</pre></td><td><input type="button" value="getParam" onclick="test(this)"><br><textarea onkeyup="change(this)" rows="10"></textarea></td></tr><tr><th>student/selectcourses/courseselection/gettasklist</th><td><pre>{
+	
+	"data":"str",
+	"metaDataCode":"str"
+}</pre></td><td><pre>{
+	"items":[{
+		"endDate":1517553113395,
+		"extendObject":{},
+		"id":"str",
+		"startDate":1517553113395,
+		"taskStatus":1
+	}],
+	"msg":"str",
+	"totalCount":123
+}</pre></td><td><input type="button" value="getParam" onclick="test(this)"><br><textarea onkeyup="change(this)" rows="10"></textarea></td></tr><tr><th>student/selectcourses/courseselection/result</th><td><pre>{
+	
+	"data":{
+		"endDate":1517553113399,
+		"extendObject":{},
+		"id":"str",
+		"startDate":1517553113399,
+		"taskStatus":1
+	},
+	"metaDataCode":"str"
+}</pre></td><td><pre>{
+	"code":123,
+	"data":[{
+		"approvedStatus":"str",
+		"choosenCount":"str",
+		"courseName":"str",
+		"createDate":1517553113403,
+		"extendObject":{},
+		"id":"str",
+		"instrTypeName":"str",
+		"order":"str",
+		"requestLimited":"str"
+	}],
+	"errorCode":123,
+	"extendedData":{},
+	"message":"str",
+	"tag":"str"
+}</pre></td><td><input type="button" value="getParam" onclick="test(this)"><br><textarea onkeyup="change(this)" rows="10"></textarea></td></tr><tr><th>student/selectcourses/courseselection/add</th><td><pre>{
+	
+	"data":{
+		"courseOfferingId":"str",
+		"courseTypeId":"str",
+		"requestTaskId":"str",
+		"taskCourseId":"str"
+	},
+	"metaDataCode":"str"
+}</pre></td><td><pre>{
+	"code":123,
+	"data":"str",
+	"errorCode":123,
+	"extendedData":{},
+	"message":"str",
+	"tag":"str"
+}</pre></td><td><input type="button" value="getParam" onclick="test(this)"><br><textarea onkeyup="change(this)" rows="10"></textarea></td></tr><tr><th>student/selectcourses/courseselection/cancel</th><td><pre>{
+	
+	"data":{
+		"courseOfferingId":"str",
+		"courseTypeId":"str",
+		"requestTaskId":"str",
+		"taskCourseId":"str"
+	},
+	"metaDataCode":"str"
+}</pre></td><td><pre>{
+	"code":123,
+	"data":"str",
+	"errorCode":123,
+	"extendedData":{},
+	"message":"str",
+	"tag":"str"
+}</pre></td><td><input type="button" value="getParam" onclick="test(this)"><br><textarea onkeyup="change(this)" rows="10"></textarea></td></tr><tr><th>student/selectcourses/courseselection/submit</th><td><pre>{
+	
+	"data":"str",
+	"metaDataCode":"str"
+}</pre></td><td><pre>{
+	"code":123,
+	"data":"str",
+	"errorCode":123,
+	"extendedData":{},
+	"message":"str",
+	"tag":"str"
+}</pre></td><td><input type="button" value="getParam" onclick="test(this)"><br><textarea onkeyup="change(this)" rows="10"></textarea></td></tr></tbody></table></div>
+</body></html>

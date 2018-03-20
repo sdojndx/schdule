@@ -1,0 +1,124 @@
+@import "./common";
+.nav_case {
+	width: 100%;
+	height: 90px;
+	z-index: 1;
+	position: relative;
+	background: url(../images/login/login_nav_line.png) bottom repeat-x #fff;
+	.info_wrap {
+		margin: 0 auto;
+		width: $wrapWidth;
+		height: 80px;
+		overflow: hidden;
+		.logo {
+			float: left;
+			margin-top: 20px;
+			width: 302px;
+			height: 41px;
+			background: url(../images/page/logo.png) center no-repeat;
+		}
+		.welcome {
+			float: right;
+			margin-top: 32px;
+			font-size: 14px;
+		}
+	}
+}
+
+.login_main {
+	position: relative; //overflow: hidden;
+	.img {
+		width: 100%;
+		height: 100%;
+	}
+	.login_content{
+		position: absolute;
+		width: 330px;
+		height: 420px;
+		.login_info_main {
+			position: absolute;
+			background: url(../images/login/login_nav_line.png) top no-repeat #f9f8f4;
+			background-size: 330px 5px;
+			width: 330px;
+			height: 420px;
+			filter: alpha(Opacity=70);
+			-moz-opacity: 0.7;
+			opacity: 0.7;
+		}
+		.login_info {
+			position: absolute;
+			padding: 27px;
+			h2 {
+				color: #3e91eb;
+				font-size: 16px;
+			}
+			input {
+				border: none;
+				width: 217px;
+				height: 44px;
+				border-radius: 0 5px 5px 0;
+				font-size: 15px;
+				color: #3e91eb;
+				padding-left: 10px;
+				background: #fff;
+			}
+			.login_submit {
+				background: -moz-linear-gradient(left, #209cff, #68e0cf);
+				background: -o-linear-gradient(left, #209cff, #68e0cf);
+				background: -webkit-gradient(linear, 0% 100%, 100% 0%, from(#209cff), to(#68e0cf));
+				filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#209cff', endColorStr='#68e0cf', gradientType='1');  /*IE8+*/
+				background: -ms-linear-gradient(top, #209cff, #68e0cf);  /* IE 10 */
+				FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#209cff, endColorStr=#68e0cf, gradientType='1');  /* IE < 10 */
+				color: #fff;
+				font-size: 19px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				width: 270px;
+				margin-top: 35px;
+			}
+			.remember_username {
+				margin-top: 25px;
+				margin-bottom: 35px;
+				p {
+					font-size: 12px;
+					display: inline-block;
+					margin-left: 10px;
+				}
+			}
+			.user_name,
+			.pass_word,
+			.login_icon {
+				margin-top: 25px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				span {
+					width: 44px;
+					height: 44px;
+					background: #e8f6ff;
+					border-radius: 5px 0 0 5px;
+					text-align: center;
+					line-height: 44px;
+					color: #b7babf;
+				}
+			}
+			.login_icon {
+				border: none;
+				.login_text {
+					border: 1px solid #ccc;
+					width: 154px;
+					border-radius: 5px;
+					display: inline-block;
+					margin-right: 10px;
+					input {
+						width: 100px;
+					}
+				}
+				img {
+					height: 46px;
+					vertical-align: bottom;
+				}
+			}
+		}
+	}
+}

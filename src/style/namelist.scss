@@ -1,0 +1,137 @@
+@import './common.scss';
+.namelist_container {
+	width: 1200px;
+	background-color: #fff;
+	margin: 20px auto 0;
+	.namelist_title {
+		height: 50px;
+		line-height: 50px;
+		padding-left: 20px;
+		box-sizing: border-box;
+		background-color: #f8f8f8;
+		margin-bottom: 35px;
+		h3 {
+			font-size: $largeFontSize;
+			color: $commonblue;
+		}
+	}
+	.namelist_examine_ok_box {
+		padding: 0 20px;
+		.namalist_examine_ok_people{
+			margin-right: 24px;
+		}
+		.namelist_examine_ok_title {
+			height: 55px;
+			color: #5d5d5d;
+			font-size: $narmalFontSize;
+			box-sizing: border-box;
+			h3 {
+				font-size: $largeFontSize;
+				display: inline-block;
+			}
+			.namelist_examine_ok_left {
+				float: left;
+			}
+			.namelist_examine_ok_right {
+				float: right;
+			}
+			.namelist_examine_title_pink {
+				color: #eb9ab9;
+			}
+			.namelist_examine_title_blue {
+				color: $commonblue;
+			}
+		}
+		.namelist_examine_img {
+			width: 62px;
+			height: 60px;
+			float: left;
+			cursor: pointer;
+		}
+		ul {
+			li {
+				width: 270px;
+				height: 62px; 
+				margin-bottom: 35px;
+				position: relative;
+				float: left;
+				&.namelist_examine_li {
+					height: 92px;
+					p{
+						color: #666;
+					}
+				}
+				.namelist_examine_text {
+					font-size: $narmalFontSize;
+					position: absolute;
+					bottom: 0;
+					left: 82px;
+					&.namelist_examine_text_wait {
+						bottom: 30px;
+					}
+					p {
+						margin-top: 5px;
+					}
+				}
+				.namelist_examine_checkbox {
+					position: relative;
+					bottom: -65px;
+					left: -38px;
+				}
+			}
+		}
+	}
+	.namelist_btn_box {
+		height: 65px;
+		line-height: 65px;
+		font-size: $largeFontSize;
+		position: relative;
+		.namelist_btn {
+			width: 100px;
+			height: 38px;
+			text-align: center;
+			line-height: 38px;
+			color: $spaceBgColor;
+			border-radius: 3px;
+			background-color: $posColor;
+			position: absolute;
+			left: 50%;
+			top: 10px;
+			margin-right: 50px;
+			&:hover {
+				background-color: $posColorHover;
+			}
+			&.namelist_btn_blue {
+				background-color: $commonblue;
+				left: 35%;
+				&:hover {
+					background-color: $subColorHover;
+				}
+			}
+		}
+	}
+}
+.alert_box_classname {
+	font-size: 16px;
+	color: #666;
+	margin: 30px 0 20px 20px;
+}
+.clearfix:after {
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+/* 提示文字 */
+.req_mes{
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	color: #3f93eb;
+}

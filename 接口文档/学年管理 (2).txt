@@ -1,0 +1,53 @@
+
+
+======================学年管理=================
+
+schooladmin/basedata/acadyear/showinfo
+{
+	"data":""
+}
+修改
+schooladmin/basedata/acadyear/updateacadyear
+{
+	
+	"data":{
+		"id":"str",
+		"acadYearName":"str",
+		"beginDateTime":1517276473144,
+		"endDateTime":1517276473144
+		
+	}
+}
+
+
+学期
+schooladmin/basedata/acadterm/showinfo
+{
+	
+	"data":"383"
+}
+
+
+
+编辑
+schooladmin/basedata/acadterm/updateacadterm
+
+operate分为add/update/delete
+{
+	
+	"data":[{
+		"id":"383",
+		"acadYearID":"383"
+		"acadTermName":"str",
+		"dayNum":123,
+		"weekNum":123
+		"beginDateTime":1517276473135,
+		"endDateTime":1517276473135,
+		"operate":"add"
+	}]
+}
+
+
+
+
+

@@ -1,0 +1,75 @@
+.list_title{
+	height: 64px;
+	line-height: 64px;
+	overflow: hidden;
+	margin-left: 25px;
+	p{
+		float: left;
+		font-size: 15px;
+		color: #666;
+	}
+	.course_num{
+		font-size: 12px;
+		margin-left: 20px;
+		.num{
+			color: #ff5858;
+		}
+	}
+}
+.studentList{
+	text-align: center;
+	table{
+		width: 100%;
+		font-size:14px;
+
+		tr{
+			color: #666666;
+			height: 40px;
+			background-color: #fff;
+			td{
+				.operation{
+					display: inline-block;
+					text-decoration: none;
+					color: #3e91eb;
+					padding: 2px;
+					margin-left: 20px;
+					border-radius: 3px;
+				}
+			}
+		}
+		tr:nth-child(odd) {
+			background-color: #f2f2f2;
+		}
+		.list_outfit{
+			height: 56px;
+			th{
+				text-align: center;
+				background-color: #f2f2f2;
+				margin-right: -1px;
+				span{
+					color: #666;
+					height: 22px;
+					line-height: 22px;
+					display: block;
+					margin:20px 0;
+				}
+			}
+		}
+	}
+}
+.list_title_container{
+	width: 1200px;
+	margin: 40px auto 20px;
+	overflow: hidden;
+	p{
+		float: left;
+		color: #3e91eb;
+		margin-right: 20px;
+		font-size: 22px;
+	}
+	.title_font{
+		font-size: 14px;
+		vertical-align: bottom;
+		margin-top: 5px;
+	}
+}

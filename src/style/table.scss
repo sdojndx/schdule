@@ -1,0 +1,55 @@
+@import "./common.scss";
+.list_content{
+	margin:15px 25px 0;
+	text-align: center;
+	table{
+		width: 100%;
+		font-size:14px;
+		tbody{
+			tr:nth-child(odd) {
+				background-color: #f5fbff;
+			}
+			tr:nth-child(even) {
+				background-color: #fff;
+			}
+			tr{
+				//border: 2px solid transparent;
+				height: 44px;
+				color:#6c6c6c;
+				&:hover{
+					border:2px solid #1f8eff;
+				}
+			}
+		}
+		thead{
+			tr{
+				height: 55px;
+				color:#1663b1;
+				background-color: #b3ddff;
+				th{
+					text-align: center;
+				}
+			}
+			
+		}
+		.operation_title{
+			border-left: 2px solid #fff;
+		}
+		a{
+			color:#262626;
+			height: 28px;
+			line-height: 28px;
+			padding:0 5px;
+			margin-right: 10px;
+			display: inline-block;
+			&:hover{
+				background-color: #ff5405;
+				color: #fff;
+				cursor: pointer;
+			}
+		}
+		.option{
+			border-left: 2px solid #f0f0f0;
+		}
+	}
+}

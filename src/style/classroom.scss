@@ -1,0 +1,656 @@
+@import './common.scss';
+@import './reset.css';
+@import './form.scss';
+/* 公共样式 */
+
+.classroom_first_title {
+  height: $largeHeight;
+  line-height: $largeHeight;
+  color: $subColor;
+  padding-left: 25px;
+  font-size: 17px;
+  background-color: #f8f8f8;
+}
+
+/* 4-0教室管理(无楼字时) */
+
+.classroom_container {
+  width: 1198px;
+  height: 477px;
+  margin: 0 auto;
+  background-color: $spaceBgColor;
+  position: relative;
+}
+
+.classroom_left {
+  width: 192px;
+  height: 162px;
+  background: url('../images/classroom/classroom_pen.png') no-repeat;
+  position: absolute;
+  left: 21%;
+  top: 32%;
+}
+
+.classroom_right {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  margin-top: -50px;
+}
+
+.classroom_second_title {
+  font-size: $largestFontSize;
+}
+
+.classroom_input {
+  width: 144px;
+  height: $largestHeight;
+  line-height: $largestHeight;
+  border-radius: 4px; // behavior: url(/ie-css3.htc);
+  padding: 0 20px;
+  margin-right: 10px;
+  font-size: $largestFontSize;
+  color: $spaceBgColor;
+  margin-top: 20px;
+  &.classroom_build_btn {
+    background-color: $posColor;
+    &:hover {
+      background-color: #FC8800;
+    }
+  }
+  &.classroom_ground_btn {
+    background-color: $subColor;
+    &:hover {
+      background-color: #1A88FF;
+    }
+  }
+  &.classroom_batch_btn {
+    background-color: #E8F6FF;
+    border: 1px solid #95CEF5;
+    color: #95CEF5;
+    &:hover {
+      background-color: #C3E7FF;
+      color: #3E91EB;
+    }
+  }
+}
+
+/* 4-1添加楼宇管理 */
+
+.classroom_container_build {
+  width: $wrapWidth; // height: 640px;
+  margin: 20px auto 0;
+  background-color: $spaceBgColor;
+  position: relative;
+}
+
+.classroom_build_right {
+  height: 46px;
+  line-height: 46px;
+  margin-right: 10px;
+  float: right;
+  .search_input {
+    position: relative;
+    display: inline-block;
+  }
+  .icon_search {
+    width: 18px;
+    height: 18px;
+    background: url('../images/classroom/classroom_search.png') no-repeat center top;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  .classroom_search {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 86px;
+    top: 17px;
+    background: url('../images/classroom/classroom_search.png') no-repeat left center;
+  }
+  .classroom_build_span {
+    margin-right: 10px;
+    span {
+      font-size: 14px;
+      color: #999;
+      strong {
+        color: $posColor;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.classroom_build_input1 {
+  width: 160px;
+  height: 28px;
+  border: 1px solid #D4D4D4;
+  border-radius: 2px;
+  margin: 0 10px;
+  font-size: 14px;
+  padding-left: 25px;
+  box-sizing: border-box;
+  color: #999;
+}
+
+.classroom_build_input2 {
+  width: 62px;
+  height: 28px;
+  border-radius: 4px;
+  background-color: $posColor;
+  color: $spaceBgColor;
+  font-size: 14px;
+  line-height: 25px;
+  cursor: pointer;
+  &:hover {
+    background-color: #FC8800;
+  }
+}
+
+.classroom_build_box {
+  text-align: center;
+  margin: 0 auto;
+  .classroom_build_btn {
+    width: 144px;
+    height: $largeHeight;
+    line-height: $largeHeight;
+    border-radius: 4px;
+    padding: 0 20px;
+    margin-right: 10px;
+    font-size: $largestFontSize;
+    color: $spaceBgColor;
+    margin-top: 20px;
+    &.classroom_build_btn1 {
+      background-color: $posColor;
+      &:hover {
+        background-color: #FC8800;
+      }
+    }
+    &.classroom_build_btn2 {
+      background-color: $subColor;
+      &:hover {
+        background-color: #1A88FF;
+      }
+    }
+    &.classroom_build_btn3 {
+      background-color: #E8F6FF;
+      border: 1px solid #95CEF5;
+      color: #95CEF5;
+      &:hover {
+        background-color: #C3E7FF;
+        color: #3E91EB;
+      }
+    }
+  }
+}
+.buildbox_outline {
+  width: 100%;
+  border-left: 3px solid #f8f8f8;
+  padding-bottom: 10px;
+  margin-left: 40px;
+}
+.buildbox_outline_white {
+  width: 100%;
+  border-left: 3px solid #fff;
+  padding-bottom: 10px;
+  margin-left: 40px;
+}
+.classroom_build_add {
+  width: auto;
+  border: 1px solid #F7D3A8;
+  position: relative;
+  cursor: pointer;
+  margin: 0 40px 28px 40px;
+}
+
+.classroom_square_box {
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-top: 11px solid transparent;
+  border-left: 22px solid #F7D3A8;
+  border-bottom: 11px solid transparent;
+  -webkit-transform: skew(-45deg);
+  -moz-transform: skew(-45deg);
+  -o-transform: skew(-45deg);
+  transform: skew(-45deg);
+  position: absolute;
+  left: -12px;
+}
+
+.classroom_square_in {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 20px solid #FFF9F2;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  left: -21px;
+  top: -11px;
+}
+
+.classroom_square_boxhidden {
+  width: 15px;
+  height: 15px;
+  background-color: #FFF9F2;
+  position: absolute;
+}
+
+.classroom_build_top {
+  height: 65px;
+  line-height: 65px;
+  width: 100%;
+  padding-left: 20px;
+  background-color: #FFF9F2;
+  box-sizing: border-box;
+  strong {
+    font-size: 15px;
+    color: #FC8800;
+  }
+}
+
+.classroom_build_circular {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #FC8800;
+  position: absolute;
+  // top: 5px;
+  // left: -55px;
+  color: $spaceBgColor;
+  font-size: $narmalFontSize;
+  top: -1px;
+    left: -58px;
+}
+
+.classroom_build_name {
+  font-size: 24px;
+  color: $subColor;
+  .classroom_build_number {
+    font-size: $narmalFontSize;
+    color: #999;
+    position: absolute;
+    top: 0;
+    right: 80px;
+  }
+  strong {
+    font-size: $narmalFontSize;
+    color: #FC8800;
+    position: absolute;
+    top: 0;
+    right: 56px;
+  }
+}
+
+.edit_pen {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 20px;
+  background: url('../images/classroom/edit_pen.png') center top no-repeat;
+}
+
+.classroom_build_more {
+  width: 26px;
+  height: 26px;
+  background: url('../images/classroom/classroom_more.png') no-repeat;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}
+
+.classroom_build_more_down {
+  width: 26px;
+  height: 26px;
+  background: url('../images/classroom/classroom_more_down.png') no-repeat;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}
+
+.classroom_build_close {
+  width: 18px;
+  height: 18px;
+  background: url('../images/classroom/classroom_close.png') no-repeat;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  &:hover {
+    background: url('../images/classroom/classroom_close_hover.png') no-repeat;
+  }
+}
+
+.classroom_build_down {
+    max-height: 290px;
+    overflow: overlay;
+  .classroom_ul_build {
+    padding: 10px;
+  }
+  .classroom_build_a {
+    text-decoration: none;
+  }
+}
+
+.classroom_build_addclassroom {
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  margin: 20px;
+  background-color: #E8F6FF;
+  color: #3E91EB;
+  line-height: 70px;
+  &:hover {
+    background-color: #C3E7FF;
+  }
+  p {
+    width: 200px;
+    font-size: 40px;
+    strong {
+      font-size: $largestFontSize;
+      vertical-align: middle;
+    }
+  }
+}
+
+.classroom_build_add.classroom_list_outline {
+  border: 1px solid #F7D3A8;
+}
+
+.classroom_list_box {
+  &:hover .classroom_full_btn,
+  &:hover .classroom_full_bg {
+    display: block;
+  }
+  width: 195px;
+  height: 70px;
+  margin: 10px;
+  float: left;
+  border-radius: 3px;
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
+  .classroom_list_name {
+    display: inline;
+    font-size: $largeFontSize;
+  }
+  .room_name_general {
+    color: #8d5614;
+  }
+  .room_name_computer {
+    color: #1d4fd2;
+  }
+  .room_name_art {
+    color: #80164d;
+  }
+  .room_name_music {
+    color: #880a1e;
+  }
+  .room_name_lab {
+    color: #0b6809;
+  }
+  .room_name_pe {
+    color: #1c7272;
+  }
+  .classroom_list_normal {
+    width: 45px;
+    height: 20px;
+    line-height: 20px;
+    font-size: $smallFontSize;
+    text-align: center;
+    color: $spaceBgColor;
+    border-radius: 0 0 3px 3px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+  .room_type_general {
+    background-color: #F59524;
+  }
+  .room_type_computer {
+    background-color: #3e73ff;
+  }
+  .room_type_art {
+    background-color: #f52490;
+  }
+  .room_type_music {
+    background-color: #f52446;
+  }
+  .room_type_lab {
+    background-color: #20851e;
+  }
+  .room_type_pe {
+    background-color: #007373;
+  }
+  .classroom_list_font {
+    font-size: $smallFontSize;
+    color: #999999;
+    margin-top: 6px;
+    .classroom_subject {
+      display: inline-block;
+      .classroom_subject_item {
+        width: 55px;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        vertical-align: bottom;
+      }
+    }
+    em {
+      float: right;
+    }
+  }
+  .classroom_full_btn {
+    width: 196px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  .classroom_full_bg {
+    width: 196px;
+    height: 70px;
+    opacity: 0.6;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    display: none;
+  }
+}
+
+.li_bgc_general {
+  background-color: #fff0cc;
+}
+
+.li_bgc_computer {
+  background-color: #d3dfff;
+}
+
+.li_bgc_art {
+  background-color: #ffdff9;
+}
+
+.li_bgc_music {
+  background-color: #ffe4e7;
+}
+
+.li_bgc_lab {
+  background-color: #d2f5d9;
+}
+
+.li_bgc_pe {
+  background-color: #d3ffff;
+}
+
+.classroom_list_first {
+  background-color: #E8F6FF;
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #3E91EB;
+    strong {
+      font-size: $largestFontSize;
+      vertical-align: middle;
+    }
+  }
+}
+
+.classroom_container_build.classroom_container_list {
+  // height: 757px;
+}
+
+.classroom_build_circular.classroom_list_circular {
+  background-color: $subColor;
+}
+
+.classroom_square_box.classroom_square_list {
+  border-left: 22px solid #bed6f0;
+}
+
+.classroom_square_list.classroom_square_in {
+  border-left: 20px solid #e8f6ff;
+}
+
+.classroom_square_boxhidden.classroom_square_listhidden {
+  background-color: #e8f6ff;
+}
+
+.classroom_build_add.classroom_list_outline.classroom_list_blueline {
+  padding-bottom: 10px;
+  border: 1px solid #bed6f0;
+  background-color: #e8f6ff;
+  h3 {
+    font-size: 24px;
+    margin: 20px;
+    color: $commonblue;
+  }
+  .classroom_list_text {
+    width: 357px;
+    height: 34px;
+    line-height: 34px;
+    color: #666666;
+    font-size: $narmalFontSize;
+    margin-left: 20px;
+    .classroom_text_left {
+      float: right;
+      .classroom_text_span {
+        color: #666666;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.classroom_list_shuxian {
+  // width: 3px;
+  // height: 355px;
+  // background-color: #f1f1f1;
+  // position: absolute;
+  // left: 13px;
+  // top: 30px;
+}
+
+.classroom_build_add.classroom_list_outline.classroom_buildbox_top {
+  height: 66px;
+}
+
+.classroom_list_shuxian.classroom_list_topshuxian {
+  height: 66px;
+}
+
+.classroom_input_box {
+  width: 100px;
+  height: 50px;
+  background-color: #000;
+}
+
+// 按钮
+.btn_icon_left {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  background: #f59524 url('../images/classroom/btn_build.png') center top no-repeat;
+}
+
+.btn_icon_ground {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  background: #3E91EB url('../images/classroom/btn_ground.png') center top no-repeat;
+}
+
+.btn_icon_up {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  background: #e8f6ff url('../images/classroom/btn_up.png') center top no-repeat;
+}
+
+.list_icon_left {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  background: #f59524 url('../images/classroom/btn_build.png') center top no-repeat;
+}
+
+.list_icon_ground {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  background: #3E91EB url('../images/classroom/btn_ground.png') center top no-repeat;
+}
+
+.list_icon_up {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  background: #e8f6ff url('../images/classroom/btn_up.png') center top no-repeat;
+}
+
+/*弹窗背景*/
+
+.delete_bg {
+  float: left;
+  margin: 54px 0 0 73px;
+  width: 161px;
+  height: 175px;
+  background: url("../images/studentmanage/delete.png") center center no-repeat;
+}
+
+.search_null_box {
+  width: 1200px;
+  height: 452px;
+  text-align: center;
+  line-height: 452px;
+  .search_null_img {
+    width: 130px;
+    height: 128px;
+    display: inline-block;
+    background: url('../images/classroom/null_search.png');
+    vertical-align: -webkit-baseline-middle;
+    vertical-align: middle;
+  }
+  .search_null_txt {
+    font-size: 18px;
+    color: #333333;
+  }
+}

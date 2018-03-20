@@ -1,0 +1,141 @@
+@import "./common.scss";
+/*-------------------学年管理---------------------*/
+
+.listCon {
+	width: $wrapWidth;
+	margin: 0 auto;
+	background-color: #fff;
+	/*add */
+	margin-top: 20px;
+	.listTitle {
+		height: 46px;
+		line-height: 46px;
+		color: #3e91eb;
+		font-size: 17px;
+		padding-left: 25px;
+		background-color: #f5f5f5;
+		.nav_title {
+			color: #666;
+			font-size: 14px;
+			margin-left: 20px;
+		}
+	}
+	.listDetail {
+		background-color: #fff;
+		overflow: hidden;
+		padding-bottom: 100px;
+		.notice {
+			font-size: 12px;
+			color: #999;
+			margin: 20px 0 0 25px;
+			display: block;
+		}
+		.main_item {
+			width: 298px;
+			height: 398px;
+			border: 1px solid #ccc; //box-shadow: 5px 5px 5px #ccc;
+			float: left;
+			margin: 60px 0 0 75px; //padding-bottom: 100px;
+			background: url(../images/subpage/sy_bg.png) center no-repeat;
+			position: relative;
+			.studyState_notBegin {
+				width: 70px;
+				height: 30px;
+				display: block;
+				position: absolute;
+				right: 10px;
+				top: -3px;
+				background: url(../images/subpage/sy_state.png) 0 0 no-repeat;
+				text-align: center;
+				font-size: 15px;
+				color: #fff;
+				line-height: 30px;
+			}
+			.studyState_now {
+				width: 70px;
+				height: 30px;
+				display: block;
+				position: absolute;
+				right: 10px;
+				top: -3px;
+				background: url(../images/subpage/sy_state.png) -380px 0 no-repeat;
+				text-align: center;
+				font-size: 15px;
+				color: #fff;
+				line-height: 30px;
+			}
+			.studyState_over {
+				width: 70px;
+				height: 30px;
+				display: block;
+				position: absolute;
+				right: 10px;
+				top: -3px;
+				background: url(../images/subpage/sy_state.png) -765px 0 no-repeat;
+				text-align: center;
+				font-size: 15px;
+				color: #fff;
+				line-height: 30px;
+			}
+			.studyName_font {
+				color: #fff;
+				font-size: 30px;
+				margin: 84px 0 170px 0;
+				text-align: center;
+			}
+			.studyTime_font {
+				text-align: center;
+				color: #999;
+				font-size: 15px;
+				margin-bottom: 20px;
+			}
+			.studyEdit_btns {
+				.studyEdit,
+				span {
+					display: inline-block;
+					width: 120px;
+					height: 35px;
+					color: #fff;
+					text-align: center;
+					line-height: 35px;
+					border-radius: 3px;
+					cursor: pointer;
+					margin-left: 22px;
+					text-decoration: none;
+				}
+				.studyEdit_left {
+					background-color: #3e91eb;
+					&:hover {
+						background-color: #1a88ff;
+					}
+				}
+				.studyEdit_right {
+					background-color: #f59524;
+					margin-left: 20px;
+					&:hover {
+						background-color: #fc8800;
+					}
+				}
+				.studyEdit_left_unclick {
+					background-color: #c6c6c6;
+				}
+				.studyEdit_right_unclick {
+					background-color: #c6c6c6;
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+}
+
+.btn_con_top {
+	overflow: hidden;
+	margin: 20px 25px 0;
+	text-align: center;
+}
+
+.btn_con_bottom {
+	overflow: hidden;
+	margin: 30px 25px 0;
+	text-align: center;
+}

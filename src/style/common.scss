@@ -1,0 +1,258 @@
+//字体
+$fontfamily: Microsoft YaHei,
+SimSun;
+//内容宽度
+$wrapWidth: auto;
+//通用色系
+$commonblue: #3e91eb;
+//背景
+$bodyBgColor: #f1f1f1;
+$spaceBgColor: white;
+$searchBtSpaceBgColor: #fafafa;
+$tableHeardBgColor: #fafafa;
+$largestFontSize: 18px; //超大字体
+$largeFontSize: 16px; //大字体
+$narmalFontSize: 14px; //普通字体
+$smallFontSize: 12px; //小字体
+//form
+//查询条件
+$searchItemWidth: 340px;
+$searchItemHeight: 34px;
+$searchItemLabelWidth: 127px;
+$searchItemInputWidth: 193px;
+//编辑条件
+$editItemHeight: 34px;
+$editItemLabelWidth: 160px;
+$editItemInputWidth: 320px;
+$editFocusBorderColor: #177bbb;
+$editWrongBorderColor: #ea5b5b;
+//按钮相关
+$posColor: #f59524;
+$posColorHover: #fc8800;
+$subColor: #3e91eb;
+$subColorHover: #1a88ff;
+$negColor: #5adad0;
+$negColorHover: #2cc9bd;
+$disableColor: #c6c6c6;
+$largestHeight: 56px;
+$largeHeight: 46px;
+$normalHeight: 36px;
+$smallHeight: 26px;
+/*-------------------------按钮通用样式--------------------------*/
+
+.common_btn {
+	padding: 0 20px;
+	height: $normalHeight;
+	line-height: $normalHeight;
+	font-size: $largeFontSize;
+	border-radius: 2px;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+}
+
+.pos_btn {
+	@extend.common_btn;
+	background-color: $posColor;
+	&:hover {
+		background-color: $posColorHover;
+	}
+}
+
+.neg_btn {
+	@extend.common_btn;
+	background-color: $negColor;
+	&:hover {
+		background-color: $negColorHover;
+	}
+}
+
+.sub_btn {
+	@extend.common_btn;
+	background-color: $subColor;
+	&:hover {
+		background-color: $subColorHover;
+	}
+}
+
+.disabled_btn {
+	background-color: $disableColor;
+	cursor: default;
+	&:hover {
+		background-color: $disableColor;
+	}
+}
+
+/*-------------------------stylepart--------------------------*/
+
+.course_left_grade {
+	float: left;
+	width: 200px;
+	background: #fff;
+	.grade_title {
+		height: 46px;
+		line-height: 46px;
+		background: #f8f8f8;
+		color: #333;
+		font-size: 16px;
+		display: block;
+		padding-left: 27px;
+	}
+	.grade_border_bott {
+		cursor: pointer;
+		border-bottom: 1px solid #c6e1f3;
+	}
+	li {
+		height: 46px;
+		border-left: 12px solid #fff;
+		line-height: 46px;
+		font-size: 14px;
+		color: #999;
+		padding-left: 15px;
+		margin: 3px 0;
+		cursor: pointer;
+		&:hover {
+			border-left: 12px solid #93c3f5;
+			color: #3e91eb;
+		}
+	}
+	.active{
+		border-left: 12px solid #3e91eb;
+		color: #3e91eb;
+	}
+}
+
+/*******************pageset********************/
+
+/* 表格底部 */
+
+.listBottom {
+	margin: 40px 25px 0;
+	padding-bottom: 25px;
+	height: 28px;
+	font-size: 14px;
+	color: #999999;
+	.listBottomLeft {
+		float: left;
+		strong {
+			color: #f59524;
+		}
+		.select_pading {
+			width: 60px;
+			height: 26px;
+			color: #f59524;
+			padding-left: 10px;
+			margin-left: 10px;
+			appearance: none;
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			background: #FFFFFF url("../images/studentmanage/sm_arrow3.png") top right no-repeat;
+			border: 1px solid #d4d4d4;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;
+		}
+		select::-ms-expand {
+			display: none;
+		}
+	}
+	.listBottomRight {
+		float: right;
+		font-size: 14px;
+		.bottomPage {
+			letter-spacing: 20px;
+		}
+		input {
+			width: 60px;
+			height: 26px;
+			border: 1px solid #d4d4d4;
+			border-radius: 3px;
+			margin: 0 10px;
+			padding: 5px;
+			color: #3e91eb;
+			box-sizing: border-box;
+		}
+		a {
+			display: inline-block;
+			text-decoration: none;
+			color: #999999;
+			width: 60px;
+			height: 26px;
+			line-height: 26px;
+			text-align: center;
+			margin-left: 10px;
+			background-color: #fff;
+			border: 1px solid #d4d4d4;
+			border-radius: 3px;
+			&:hover {
+				color: #fff;
+				background: #3e91eb;
+			}
+		}
+		.listBottomInput {
+			display: inline-block;
+			margin-left: 10px;
+		} 
+		.page_num {
+			color: #999999;
+			margin: 0 10px;
+			cursor: pointer;
+			&:hover {
+				color: #3e91eb;
+			}
+		}
+		.page_num_disable {
+			margin: 0 10px;
+			color: #cfcfcf;
+		}
+		.current_page {
+			margin: 0 10px;
+			color: #3e91eb;
+		}
+	}
+}
+
+/*************pagenav****************/
+/*-------------------导航头部--------------------*/
+
+.listCon {
+	width: $wrapWidth;
+	margin: 0 auto;
+	background-color: #fff;
+	/*add 
+	margin-top: 20px;*/
+	.listTitle {
+		height: 46px;
+		line-height: 46px;
+		color: #3e91eb;
+		font-size: 17px;
+		padding-left: 25px;
+		background-color: #f8f8f8;
+		overflow: hidden;
+		.nav_title {
+			color: #666;
+			font-size: 14px;
+			margin-left: 16px;
+		}
+		.nav_select{
+			float: right;
+			margin-right: 10px;
+			line-height: 0;
+			// margin-top: 7px;
+		}
+	}
+}
+
+.clearfix:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+

@@ -1,0 +1,40 @@
+@import './common.scss';
+
+.alert_full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #474747;
+  .alert_box {
+    margin: 200px auto;
+  }
+  .alert_title {
+    color: #fff;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    background: -moz-linear-gradient(left, #209cff, #68e0cf);
+    background: -o-linear-gradient(left,#209cff, #68e0cf);
+    background: -webkit-gradient(linear, 0% 100%, 100% 0%, from(#209cff), to(#68e0cf));
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#209cff',endColorStr='#68e0cf',gradientType='1'); /*IE8+*/
+    background: -ms-linear-gradient(left, #209cff, #68e0cf);/* IE 10 */
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#209cff, endColorStr=#68e0cf,gradientType='1');/* IE < 10 */
+  }
+  .alert_title_first {
+    font-size: 18px;
+  }
+  .alert_title_second {
+    font-size: 14px;
+  }
+  .close_icon{
+    background:  url('../images/classroom/alert_icon.png') center no-repeat;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    margin-right: 20px;
+    float: right;
+    margin-top: 10%;
+  }
+}
